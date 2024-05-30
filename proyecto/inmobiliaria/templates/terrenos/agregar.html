@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block título %} Agregar nuevo terreno {% endblock %}
+
+{% block contenido %}
+
+<div class="card">
+    <div class="card-header">Agregar un terreno</div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del terreno</h4>
+
+        {% include 'terrenos/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+</div>
+
+
+{% endblock %}
